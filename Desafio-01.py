@@ -30,4 +30,4 @@ if (total_consu_calorico > resultado_calorico_gasto):
 elif (total_consu_calorico == resultado_calorico_gasto):
     print ('Você não esta ganhando nem perdendo peso!')
 elif (total_consu_calorico < resultado_calorico_gasto):
-    print ('Você esta emagrecendo,',nome, ', Parabéns!')
+    print ('Você esta emagrecendo,',nome, ', Parabéns!')    
