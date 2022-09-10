@@ -11,26 +11,24 @@ while (quantidade > int(0)):
     notas.append(filme[1]);
 
 else:
-    def shortBubbleSort(notas):
-        mudar = True;
-        verificador = int(len(notas)-1);
+    mudar = True;
+    verificador = int(len(notas)-1);
 
-        while ((verificador > 0) and (mudar == True)):
-            mudar = False;
+    while ((verificador > 0) and (mudar == True)):
+        mudar = False;
 
-            for i in range(verificador):
+        for i in range(verificador):
 
-                if notas[i]>notas[i+1]:
-                    mudar = True;
-                    temp_film = filmes[i];
-                    filmes[i] = filmes[i+1];
-                    filmes[i+1] = temp_film;
-                    temp_nota = notas[i];
-                    notas[i] = notas[i+1];
-                    notas[i+1] = temp_nota;
-                
-            verificador -= int(1);
-    shortBubbleSort(notas);
+            if notas[i]<notas[i+1]:
+                mudar = True;
+                temp_film = filmes[i];
+                filmes[i] = filmes[i+1];
+                filmes[i+1] = temp_film;
+                temp_nota = notas[i];
+                notas[i] = notas[i+1];
+                notas[i+1] = temp_nota;
+            
+        verificador -= int(1);
     filmes.reverse();
     notas.reverse();
     verificador = int(len(notas));
